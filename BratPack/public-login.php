@@ -19,7 +19,7 @@ include "includes/header.php";
         </form>
     </div>
 <?php
-include "includes/header.php";
+include "includes/footer.php";
 ?>
 
 
