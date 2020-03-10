@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>The Brat Pack Daycare System - Login Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-</head>
-
-<body class="text-center">
-    <div id="login__form">
+<?php
+include "includes/header.php";
+?>
+    <div id="login__form" class="text-center">
         <form class="form-signin">
             <img class="mb-4" src="images/Logo-BratPack.jpeg" alt="The Brat Pack Logo" width="250px" height="auto">
             <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
@@ -26,7 +18,8 @@
             <span>New to The Brat Pack Daycare System? <a href="/">Sign up here.</a></span>
         </form>
     </div>
-</body>
-</html>
+<?php
+include "includes/header.php";
+?>
 
 
