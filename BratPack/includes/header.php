@@ -13,6 +13,6 @@
 <header>
 
 
-    <img id="logo" src="images/logo.jpeg">
+    <img id="logo" src="images/logo.png">
   <?php include 'nav.php'?>
 </header>

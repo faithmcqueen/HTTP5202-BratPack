@@ -5,23 +5,23 @@ include 'includes/header.php';
 <div class="slideshow">
     <div class="slideshow__slides">
         <img src="images/sliderimages/s_image1.jpg" class="slidesow__slides_img">
-        <div class="slideshow__slides_caption">
-            Experience child care as it should be.
-            <a href="">Read more about us.</a>
+        <div id="slideshow__slides_caption1">
+            <div>Experience child care as it should be.</div>
+            <a href="">Read more about us</a>
         </div>
     </div>
     <div class="slideshow__slides">
         <img src="images/sliderimages/s_image2.jpg" class="slidesow__slides_img">
-        <div class="slideshow__slides_caption">
-            A nurturing and creative world.
-            <a href="">Read more about us.</a>
+        <div id="slideshow__slides_caption2">
+            <div>A nurturing and creative world.</div>
+            <a href="">Why choose us?</a>
         </div>
     </div>
     <div class="slideshow__slides">
         <img src="images/sliderimages/s_image3.jpg" class="slidesow__slides_img">
-        <div class="slideshow__slides_caption">
-            A great place to grow.
-            <a href="">Find out more about our activities.</a>
+        <div id="slideshow__slides_caption3">
+            <div>A great place to grow.</div>
+            <a href="">Find out more about our activities</a>
         </div>
     </div>
 
@@ -31,7 +31,8 @@ include 'includes/header.php';
 
 <div class="loginscreen">
     <div class="loginscreen__caption">
-        Log In :
+        <div class="loginscreen__caption_text">Log In :</div>
+        <img src="images/icons/login.png" class="loginscreen__icon">
     </div>
     <div class="loginscreen__user">
         <a href='admin.php' class="button">Admin</a>
