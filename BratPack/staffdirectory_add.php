@@ -4,7 +4,12 @@ include "includes/header.php";
 
 <div class="container">
     <h1>Add New Staff Member</h1>
-    <form>
+
+    <div class="navbar">
+        <a href="staffdirectory_list.php" class="btn btn-secondary">Back to List</a>
+    </div>
+
+    <form enctype="multipart/form-data">
         <div class="form-group row">
             <label for="staff__firstname" class="col-sm-2 col-form-label">First Name:</label>
             <div class="col-sm-10">
