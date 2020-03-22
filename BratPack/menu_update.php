@@ -11,7 +11,7 @@ if(isset($_POST['updateMenuItem'])){
 
 
     // grab existing information
-    $sql = "SELECT * FROM menu where id = :id";
+    $sql = "SELECT * FROM menus where id = :id";
     $pst = $dbcon->prepare($sql);
     $pst->bindParam(':id', $id);
     $pst->execute();
@@ -32,7 +32,7 @@ if(isset($_POST['updMenuItem'])){
 
 
     //update with new information
-    $sql = "UPDATE menu 
+    $sql = "UPDATE menus 
             set name = :name, 
             description = :description 
             WHERE id= :id";

@@ -1,6 +1,7 @@
 <?php
 
 include "includes/header.php";
+
 ?>
 <div><h1>Welcome "Parent Name"</h1></div>
 <div class="container">

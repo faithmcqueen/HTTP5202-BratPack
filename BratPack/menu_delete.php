@@ -5,7 +5,7 @@ if(isset($_POST['id'])){
     require_once ('classes/database.php');
 //    require_once  ('MySqlDatabase.php');
 
-    $sql = "DELETE FROM menu WHERE id = :id";
+    $sql = "DELETE FROM menus WHERE id = :id";
 
     $dbcon = Database::getDb();
     $pst = $dbcon->prepare($sql);

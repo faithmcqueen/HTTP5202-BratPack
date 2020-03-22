@@ -1,7 +1,7 @@
 <?php
 class Menu {
     public function listMenu($dbcon){
-        $sql = "SELECT * FROM menu order by id desc limit 5";
+        $sql = "SELECT * FROM menus order by id desc limit 5";
         $pdostm = $dbcon->prepare($sql);
         $pdostm->execute();
 

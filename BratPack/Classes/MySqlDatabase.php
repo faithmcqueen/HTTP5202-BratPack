@@ -10,7 +10,7 @@ interface intDatabase {
 class MySqlDatabase implements intDatabase {
 
     public function  addMenuItem($dbcon, $name, $description){
-        $sql = "INSERT INTO menu (name, description) VALUES (:name, :description)";
+        $sql = "INSERT INTO menus (name, description) VALUES (:name, :description)";
         $pst = $dbcon->prepare($sql);
 
         $pst->bindParam(':name', $name);
@@ -22,7 +22,7 @@ class MySqlDatabase implements intDatabase {
 
     public function listMenu($dbcon)
     {
-        $sql = "SELECT * FROM menu order by id desc limit 5";
+        $sql = "SELECT * FROM menus order by id desc limit 5";
         $pdostm = $dbcon->prepare($sql);
         $pdostm->execute();
 

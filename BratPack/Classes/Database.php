@@ -4,7 +4,7 @@ class Database {
     private static $user = 'root';
     private static $password = 'root';
 
-    private static $dsn = 'mysql:host=localhost;dbname=menu' ;
+    private static $dsn = 'mysql:host=localhost;dbname=daycare' ;
     private static $dbcon;
 
     private function __construct()
