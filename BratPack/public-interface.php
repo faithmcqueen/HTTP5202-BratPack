@@ -1,4 +1,5 @@
 <?php
+
 include "includes/header.php";
 ?>
 <div><h1>Welcome "Parent Name"</h1></div>
@@ -56,13 +57,15 @@ include "includes/header.php";
                 </ul>
             </div>
             <div>
-                <h2>Weekly Menu</h2>
+                <h2><a href="public_menu_list.php"> Weekly Menu</a></h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Monday - </li>
+
+                    <li class="list-group-item">Monday -   </li>
                     <li class="list-group-item">Tuesday - </li>
                     <li class="list-group-item">Wednesday - </li>
                     <li class="list-group-item">Thursday - </li>
                     <li class="list-group-item">Friday - </li>
+
                 </ul>
             </div>
         </div>
