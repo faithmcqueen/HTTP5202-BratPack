@@ -20,7 +20,7 @@ include "includes/header.php";
 <a href="index.php">HOME</a>
 <div class="m-1">
     <!-- calendar via table formatting -->
-    <table class="table table-bordered tbl">
+    <table class="table table-bordered tbl container">
         <thead>
         <th scope="col">Monday</th>
         <th scope="col">Tuesday</th>
@@ -38,7 +38,7 @@ include "includes/header.php";
                     <p><?= $m['description']?></p>
 
 
-                    <form action="menu_add.php" method="post">
+                    <form action="menu_update.php" method="post">
                         <input type="hidden" name="id" value="<?=$m['id'];?>" />
                         <input type="submit" class="button btn btn-primary" name="updateMenuItem" value="Update" />
                     </form>

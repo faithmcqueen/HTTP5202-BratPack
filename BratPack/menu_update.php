@@ -4,8 +4,8 @@ $name = $description = "";
 if(isset($_POST['updateMenuItem'])){
     $id= $_POST['id'];
 
-    require_once ('database.php');
-    require_once 'MySqlDatabase.php';
+    require_once ('classes/database.php');
+    require_once 'classes/MySqlDatabase.php';
     $dbcon = Database::getDb();
     $m = new MySqlDatabase();
 

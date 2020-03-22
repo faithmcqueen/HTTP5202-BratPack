@@ -21,8 +21,8 @@
             </tr>
             <tr>
                 <td>Menu</td>
-                <td><a href="#">View</a></td>
-                <td><a href="#">Edit</a></td>
+                <td><a href="public_menu_list.php">View</a></td>
+                <td><a href="menu_list.php">Edit</a></td>
             </tr>
             <tr>
                 <td>Activities</td>
