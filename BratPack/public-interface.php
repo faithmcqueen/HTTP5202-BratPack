@@ -2,6 +2,19 @@
 
 include "includes/header.php";
 
+require_once 'classes/database.php';
+require_once 'classes/MySqlDatabase.php';
+
+$dbcon = Database::getDb();
+$m = new MySqlDatabase();
+$menu = $m->readMenu($dbcon);
+
+$monday = $menu[0]->name;
+$tuesday = $menu[1]->name;
+$wednesday = $menu[2]->name;
+$thursday = $menu[3]->name;
+$friday = $menu[4]->name;
+
 ?>
 <div><h1>Welcome "Parent Name"</h1></div>
 <div class="container">
@@ -61,11 +74,11 @@ include "includes/header.php";
                 <h2><a href="public_menu_list.php"> Weekly Menu</a></h2>
                 <ul class="list-group">
 
-                    <li class="list-group-item">Monday -   </li>
-                    <li class="list-group-item">Tuesday - </li>
-                    <li class="list-group-item">Wednesday - </li>
-                    <li class="list-group-item">Thursday - </li>
-                    <li class="list-group-item">Friday - </li>
+                    <li class="list-group-item">Monday - <?=$monday?>  </li>
+                    <li class="list-group-item">Tuesday - <?=$tuesday?></li>
+                    <li class="list-group-item">Wednesday - <?=$wednesday?></li>
+                    <li class="list-group-item">Thursday - <?=$thursday?></li>
+                    <li class="list-group-item">Friday - <?=$friday?></li>
 
                 </ul>
             </div>

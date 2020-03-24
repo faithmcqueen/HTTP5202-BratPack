@@ -3,7 +3,6 @@ if(isset($_POST['id'])){
     $id = $_POST['id'];
 
     require_once ('classes/database.php');
-//    require_once  ('MySqlDatabase.php');
 
     $sql = "DELETE FROM menus WHERE id = :id";
 

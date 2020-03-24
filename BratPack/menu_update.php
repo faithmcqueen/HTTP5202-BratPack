@@ -4,18 +4,11 @@ $name = $description = "";
 if(isset($_POST['updateMenuItem'])){
     $id= $_POST['id'];
 
-    require_once ('classes/database.php');
+    require_once 'classes/database.php';
     require_once 'classes/MySqlDatabase.php';
     $dbcon = Database::getDb();
     $m = new MySqlDatabase();
-
-
-    // grab existing information
-    $sql = "SELECT * FROM menus where id = :id";
-    $pst = $dbcon->prepare($sql);
-    $pst->bindParam(':id', $id);
-    $pst->execute();
-    $menu = $pst->fetch(PDO::FETCH_OBJ);
+    $menu = $m->showMenu($dbcon,$id);
 
     $name = $menu->name;
     $description = $menu->description;
@@ -25,31 +18,12 @@ if(isset($_POST['updMenuItem'])){
     $description = $_POST['description'];
     $id = $_POST['sid'];
 
-    require_once ('database.php');
-    require_once 'MySqlDatabase.php';
+    require_once 'classes/database.php';
+    require_once 'classes/MySqlDatabase.php';
     $dbcon = Database::getDb();
     $m = new MySqlDatabase();
 
-
-    //update with new information
-    $sql = "UPDATE menus 
-            set name = :name, 
-            description = :description 
-            WHERE id= :id";
-
-    $pst = $dbcon ->prepare($sql);
-
-    $pst->bindParam(':name', $name);
-    $pst->bindParam(':description', $description);
-    $pst->bindParam(':id', $id);
-
-    //return back to list view to confirm updated information
-    $count = $pst->execute();
-    if($count){
-        header("Location: menu_list.php");
-    } else {
-        echo "problem updating menu, looks like it's leftovers again!";
-    }
+    $menu = $m->updateMenu($dbcon,$name,$description,$id);
 
 }
 
